@@ -2,8 +2,10 @@
 <html>
  <head>
   <title>Your catchment school/title>
-  <link href="src/css/style.css" type="text/css"
-rel="stylesheet"></link>
+  <link href="src/css/style.css" type="text/css" rel="stylesheet"></link>
+   <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+   
 </head>
 <body>
 <header>
@@ -12,4 +14,23 @@ rel="stylesheet"></link>
 </header>
   <section>
   <h2>Map</h2>
+   <script>
+map.on('load', () => {
+  map.addLayer({
+    id: 'rpd_parks',
+    type: 'fill',
+    source: {
+      type: 'vector',
+      url: 'mapbox://mapbox.3o7ubwm8'
+    },
+    'source-layer': 'RPD_Parks',
+    layout: {
+      visibility: 'visible'
+    },
+    paint: {
+      'fill-color': 'rgba(61,153,80,0.55)'
+    }
+  });
+});
+   </script>
   <section>
