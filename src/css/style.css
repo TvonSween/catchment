@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  
+ }
+
+h2 {
+  font-size: 42px;
+  Font-weight: 300;
+  
+ }
+
+P {
+  color: gray;
+  font-size: 21px;
+  
+ }
+
+
+a {
+  color: aquamarine;
+  Text-decoration: underline;
+  font-size: 16px;
+  
+ }
+
+ video{
+   object-fit: contain;
+ }
+footer {
+  text-align: right;
+}
